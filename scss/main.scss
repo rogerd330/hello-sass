@@ -1,0 +1,41 @@
+@mixin spacing {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+$color-primary: #336699;
+$color-secondary: #F1FFC4;
+$color-cta: pink;
+
+body {
+    background: #ccc;
+}
+
+.header {
+    background: maroon;
+    color: $color-primary;
+    @include spacing;
+}
+
+.content {
+    background: turquoise;
+    @include spacing;
+}
+
+.footer {
+    background: lime;
+    color: $color-primary;
+    @include spacing;
+}
+
+.btn {
+    padding: 10px 20px;
+
+    &.primary {
+        background: $color-primary;
+    }
+
+    &.secondary {
+        background: $color-secondary;
+    }
+}
